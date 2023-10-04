@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            background-color: #ffffff; /* Fondo blanco */
+            color: #000000; /* Texto negro */
+        }
+        #menu {
+            background-color: #58B2AF; /* Color del menú */
+            text-align: left;
+            padding: 10px;
+        }
+        #noticias-jumbotron {
+            background-color: #58B2AF; /* Color del menú */
+            color: #ffffff; /* Texto blanco */
+            padding: 100px;
+        }
+        .carousel-indicators li {
+            border: 1px solid #58B2AF; /* Borde de indicadores */
+        }
+        .carousel-control-prev, .carousel-control-next {
+            color: #58B2AF; /* Color de flechas */
+        }
+        .carousel-item img {
+            width: 70%; /* Tamaño mediano de imagen */
+            display: block;
+            margin: 0 auto;
+        }
+        .noticia-text {
+            background-color: rgba(88, 178, 175, 0.8); /* Fondo semitransparente */
+            padding: 20px;
+            color: #ffffff; /* Texto blanco */
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú -->
+    <div id="menu">
+        <a href="index.html">Inicio</a> | <a href="equipo.html">Equipo</a> | <a href="noticias.html">Noticias</a>
+    </div>
+    
+    <!-- Jumbotron de Noticias -->
+    <div id="noticias-jumbotron" class="text-center">
+        <h1>Últimas Noticias</h1>
+        <div id="noticias-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores del Carrusel -->
+            <ol class="carousel-indicators">
+                <li data-target="#noticias-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#noticias-carousel" data-slide-to="1"></li>
+                <li data-target="#noticias-carousel" data-slide-to="2"></li>
+                <li data-target="#noticias-carousel" data-slide-to="3"></li>
+                <li data-target="#noticias-carousel" data-slide-to="4"></li>
+            </ol>
+            <!-- Carrusel de Noticias -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/noticia1.jpg" alt="Noticia 1">
+                    <div class="carousel-caption">
+                        <h3>Noticia 1</h3>
+                        <p><a href="#noticiaModal1" data-toggle="modal">Ver más</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/noticia2.jpg" alt="Noticia 2">
+                    <div class="carousel-caption">
+                        <h3>Noticia 2</h3>
+                        <p><a href="#noticiaModal2" data-toggle="modal">Ver más</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/noticia3.jpg" alt="Noticia 3">
+                    <div class="carousel-caption">
+                        <h3>Noticia 3</h3>
+                        <p><a href="#noticiaModal3" data-toggle="modal">Ver más</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/noticia4.jpg" alt="Noticia 4">
+                    <div class="carousel-caption">
+                        <h3>Noticia 4</h3>
+                        <p><a href="#noticiaModal4" data-toggle="modal">Ver más</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/noticia5.jpg" alt="Noticia 5">
+                    <div class="carousel-caption">
+                        <h3>Noticia 5</h3>
+                        <p><a href="#noticiaModal5" data-toggle="modal">Ver más</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Flechas de Control del Carrusel -->
+            <a class="carousel-control-prev" href="#noticias-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#noticias-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Modals de Noticias -->
+    <!-- Modal 1 -->
+    <div id="noticiaModal1" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Noticia 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Contenido detallado de la Noticia 1.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Repite el bloque del modal para cada noticia (Modal 2 al Modal 5) -->
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
